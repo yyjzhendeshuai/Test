@@ -1,0 +1,45 @@
+志高佳佳佳佳111
+佳佳111
+一、目标
+    1、了解java.io包
+    2、掌握File类使用
+    3、掌握字节&字符流操作
+    4、掌握字节字符转换流操作
+
+二、知识点
+    1、java.io包
+        IO  -- Input(输入) / Output(输出)  I/O
+        io在java语言中主要实现了程序数据从虚拟化到物理化的一个过程，同时也是网络传输中数据操作的一种技术。
+        io包体系结构：
+            |-File类
+            |-字节流(InputStream/OutputStream)
+                |--文件字节流(FileInputStream / FileOutputStream)
+                |--字节缓冲流(BufferedInputStream / BufferedOutputStream)
+                |--对象字节流(ObjectInputStream / ObjectOutputStream)  -- 序列化&反序列化
+            |-字符流(Reader / Writer)
+                |-- 文件字符流(FileReader / FileWriter)
+                |-- 字符缓冲流(BufferedReader / BufferedWriter)
+            |--字节字符转换流(InputStreamReader / OutputStreamWriter)
+
+    2、File类
+        是javaIO中的文件对象可以包含一个文件也可以包含一个文件夹，所以在java程序中如果需要操作计算机磁盘的文件或
+        文件夹直接通过File对象就可以来包含。
+        在操作文件对象的时候首先确保文件所在的位置：绝对路径(具体磁盘路径)、相对路径(以程序为根目录)；
+
+    3、流
+        在常规中属于一种动词，但是在java中属于一个名词，表示对文件操作的功能进行的一种描述。
+        流根据类型不同实现了应用程序与文件之间数据传递的不同.
+        流类型：字节流、字符流
+
+    4、字节流
+        在java程序与文件之间通过字节方式进行数据传递。
+        API: InputStream\OutputStream  --> FileInputStream 、FileOutputStream
+
+    5、字符流
+        在文件与java程序之间传递数据采用字符方式进行传输，实现了字符数据的完整性，一般在流媒体传输
+        中最常见。
+        API：Reader 、 Writer  --> FileReader 、FileWriter
+
+
+
+
